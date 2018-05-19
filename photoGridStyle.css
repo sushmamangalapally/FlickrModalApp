@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    padding: 10px;
+    /* margin: 10px; */
+    grid-gap: 1px;
+    grid-gap: 10px;
+    justify-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid #5ccfb3;
+    border-radius: 20px;
+    margin: 40px;
+}
+
+h1 {
+    text-align: center;
+    background: #5ccfb3;
+    padding: 10px;
+    color: white;
+    margin-top: -10px;
+}
+
+.card {
+    padding: 5px;
+}
+
+.card img {
+    width: 40%;
+    cursor: pointer;
+}
+
+#modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#modalcontent {
+    background-color: rgba(0, 0, 0, 0);
+    margin: auto;
+    width: 80%;
+    /* padding-bottom: 30px; */
+    margin-top: 20px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: .5rem;
+}
+
+span.close {
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#content {
+    border-radius: .5rem;
+    background: white;
+    padding: 10px;
+}
+
+#content,
+span.close {
+    display: inline;
+    vertical-align: top;
+}
+
+#lightbox_picture {
+    padding: 10px;
+    background: white;
+}
+
+a#prev,
+a#next {
+    font-size: 20px;
+    cursor: pointer;
+}
