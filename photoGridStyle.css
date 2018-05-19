@@ -63,16 +63,19 @@ span.close {
     padding-right: 10px;
 }
 
-#content {
-    border-radius: .5rem;
-    background: white;
-    padding: 10px;
-}
 
 #content,
 span.close {
     display: inline;
     vertical-align: top;
+}
+
+
+#content {
+    border-radius: .5rem;
+    background: white;
+    padding: 10px;
+    vertical-align: bottom;
 }
 
 #lightbox_picture {
