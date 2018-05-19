@@ -1,4 +1,4 @@
-let proxy_url = "https://cors-anywhere.herokuapp.com/"; //if browser is blocking server call
+let proxy_url = "https://cors-anywhere.herokuapp.com/"; //if browser is blocking server call & CORS problem
 let url = proxy_url + "https://api.flickr.com/services/feeds/photos_public.gne?tags=puppies&format=json";
 url += "&nojsoncallback=true";
 
@@ -121,7 +121,7 @@ function slidesMovement(img, length, num) {
         slidesMovement(picSlide, length, -1);
     }
     clickPrevious.innerHTML = "&larr;";
-    
+
     let clickNext = document.createElement('a');
     clickNext.setAttribute('id', 'next');
     clickNext.onclick = function () {
